@@ -41,9 +41,9 @@ RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | 
     && set -e; \
         for key in \
       # pub   4096R/ED3D1561 2019-03-22 [expires: 2021-03-21]
-      #       Key fingerprint = A62A E125 BBBF BB96 A6E0  42EC 925C C1CC ED3D 1561
-      # uid                  Swift 5.x Release Signing Key <swift-infrastructure@swift.org          
-          A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 \
+      #       Key fingerprint = 8513 444E 2DA3 6B7C 1659  AF4D 7638 F1FB 2B2B 08C4
+      # uid                  Swift Automatic Signing Key #2 <swift-infrastructure@swift.org>          
+          8513444E2DA36B7C1659AF4D7638F1FB2B2B08C4 \
         ; do \
           gpg --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys "$key"; \
         done \
